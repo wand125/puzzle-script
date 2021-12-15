@@ -1,0 +1,74 @@
+const ModeSpecial: React.FC<{}> = () => {
+  return (
+    <span id="mode_special" style={{ display: "none" }}>
+      <input
+        type="radio"
+        name="mode_special"
+        value="thermo"
+        id="sub_specialthermo"
+        checked={true}
+      />
+      <label
+        htmlFor="sub_specialthermo"
+        className="label"
+        id="sub_specialthermo_lb"
+      >
+        サーモ
+      </label>
+      <input
+        type="radio"
+        name="mode_special"
+        value="arrows"
+        id="sub_specialarrows"
+      />
+      <label
+        htmlFor="sub_specialarrows"
+        className="label"
+        id="sub_specialarrows_lb"
+      >
+        アロー
+      </label>
+      <input
+        type="radio"
+        name="mode_special"
+        value="direction"
+        id="sub_specialdirection"
+      />
+      <label
+        htmlFor="sub_specialdirection"
+        className="label"
+        id="sub_specialdirection_lb"
+      >
+        矢印
+      </label>
+      <input
+        type="radio"
+        name="mode_special"
+        value="squareframe"
+        id="sub_specialsquareframe"
+      />
+      <label
+        htmlFor="sub_specialsquareframe"
+        className="label"
+        id="sub_specialsquareframe_lb"
+      >
+        四角枠
+      </label>
+      <input
+        type="radio"
+        name="mode_special"
+        value="polygon"
+        id="sub_specialpolygon"
+      />
+      <label
+        htmlFor="sub_specialpolygon"
+        className="label"
+        id="sub_specialpolygon_lb"
+      >
+        多角形
+      </label>
+    </span>
+  );
+};
+
+export default ModeSpecial;
